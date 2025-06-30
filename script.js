@@ -22,9 +22,7 @@ document.querySelectorAll('.nav-links a').forEach(anchor => {
 
 // Add animation trigger on scroll
 const sections = document.querySelectorAll('.section');
-const options = {
-    threshold: 0.1
-};
+const options = { threshold: 0.1 };
 
 const observer = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
@@ -49,3 +47,13 @@ function createBubbles() {
 }
 
 createBubbles();
+
+// Simulate Transaction Demo
+function simulateTransaction() {
+    const output = document.getElementById('demo-output');
+    output.style.display = 'block';
+    output.textContent = 'Transaction processed! Time: 2 min | Status: Confirmed';
+    setTimeout(() => {
+        output.style.display = 'none';
+    }, 3000);
+}
