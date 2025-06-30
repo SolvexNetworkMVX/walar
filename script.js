@@ -15,7 +15,6 @@ document.querySelectorAll('.nav-links a').forEach(anchor => {
         document.querySelector(targetId).scrollIntoView({
             behavior: 'smooth'
         });
-        // Close hamburger menu on mobile after click
         navLinks.classList.remove('active');
         hamburger.classList.remove('toggle');
     });
@@ -38,3 +37,15 @@ const observer = new IntersectionObserver((entries, observer) => {
 sections.forEach(section => {
     observer.observe(section);
 });
+
+// Add floating bubbles
+function createBubbles() {
+    const bubbleCount = 3;
+    for (let i = 1; i <= bubbleCount; i++) {
+        const bubble = document.createElement('div');
+        bubble.classList.add('bubble');
+        document.body.appendChild(bubble);
+    }
+}
+
+createBubbles();
