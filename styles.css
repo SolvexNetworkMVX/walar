@@ -227,8 +227,8 @@ body::before {
 
 .tech-container {
     display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     gap: 40px;
 }
 
@@ -237,6 +237,7 @@ body::before {
     border-collapse: collapse;
     background: #fff;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
 }
 
 .tech-table th, .tech-table td {
@@ -252,19 +253,6 @@ body::before {
 
 .tech-table tr:hover {
     background: #e0e7ff;
-}
-
-.tech-demo {
-    width: 50%;
-    text-align: left;
-}
-
-.demo-output {
-    margin-top: 10px;
-    padding: 10px;
-    background: #f5f8ff;
-    border-radius: 5px;
-    display: none;
 }
 
 .roadmap-timeline {
@@ -394,7 +382,7 @@ body::before {
         gap: 20px;
     }
 
-    .tech-table, .tech-demo {
+    .tech-table {
         width: 100%;
     }
 
