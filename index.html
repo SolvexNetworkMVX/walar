@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Walar Network - Blockchain Infrastructure</title>
+    <title>Walar Network - The Future of Secure Blockchain</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navbar -->
@@ -15,7 +15,9 @@
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#features">Features</a></li>
-            <li><a href="#tech">Tech Specs</a></li>
+            <li><a href="#tech">Tech</a></li>
+            <li><a href="#roadmap">Roadmap</a></li>
+            <li><a href="#team">Team</a></li>
             <li><a href="#community">Community</a></li>
             <li><a href="https://x.com" target="_blank">X</a></li>
         </ul>
@@ -26,69 +28,143 @@
         </div>
     </nav>
 
-    <!-- Header -->
-    <header id="home" class="header">
-        <h1>Walar Network</h1>
-        <p>Secure, Fast, and Sustainable Blockchain Infrastructure</p>
-        <div class="header-buttons">
-            <a href="#documentation" class="btn">Documentation</a>
-            <a href="#download" class="btn">Download Wallet</a>
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <h1>Walar Network</h1>
+            <p class="tagline">Unleash the Power of Secure, Sustainable Blockchain</p>
+            <div class="hero-buttons">
+                <a href="#documentation" class="btn primary">Explore Docs</a>
+                <a href="#download" class="btn secondary">Grab the Wallet</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat"><span>1000</span> TPS</div>
+                <div class="stat"><span>2 min</span> Block Time</div>
+            </div>
         </div>
+        <div class="hero-bg"></div>
     </header>
 
     <!-- About Section -->
     <section id="about" class="section">
-        <h2>About Walar Network</h2>
-        <p>Originating from Sibiu, Romania, Walar Network is a pioneering blockchain infrastructure designed for the Walar Organization—a private group prioritizing cybersecurity, privacy, and innovation. Powered by the native token <strong>$WALAR</strong>, it enables rapid, secure, and cost-effective value transfers.</p>
-        <p>Our commitment to sustainability shines through with eco-friendly hardware like Raspberry Pi, supporting a decentralized ecosystem that thrives on trust and efficiency.</p>
+        <h2>The Walar Vision</h2>
+        <div class="content-grid">
+            <div class="content-card">
+                <h3>Origin Story</h3>
+                <p>Born in the heart of Sibiu, Romania, Walar Network is the brainchild of the secretive Walar Organization. Fueled by a passion for privacy and cybersecurity, we’ve crafted a blockchain that defies convention.</p>
+            </div>
+            <div class="content-card">
+                <h3>$WALAR Token</h3>
+                <p>Our native $WALAR token powers a decentralized economy, enabling lightning-fast value transfers with unmatched security.</p>
+            </div>
+            <div class="content-card">
+                <h3>Sustainable Future</h3>
+                <p>Harnessing Raspberry Pi nodes, we’re building an eco-warrior blockchain that thrives on low-cost, green tech.</p>
+            </div>
+        </div>
     </section>
 
     <!-- Features Section -->
     <section id="features" class="section">
-        <h2>Our Features</h2>
+        <h2>Core Innovations</h2>
         <div class="features-grid">
             <div class="feature-card">
                 <h3>Walar Encrypt</h3>
-                <p>State-of-the-art encryption ensuring top-tier data security and privacy.</p>
+                <p>Lock your data in an unbreakable fortress with our cutting-edge encryption suite.</p>
+                <div class="feature-icon">🔒</div>
             </div>
             <div class="feature-card">
                 <h3>Walar Chat</h3>
-                <p>A private, encrypted messaging platform for seamless Walar community interactions.</p>
+                <p>Whisper securely across the galaxy with our encrypted messaging platform.</p>
+                <div class="feature-icon">💬</div>
             </div>
             <div class="feature-card">
                 <h3>W Language</h3>
-                <p>An exclusive, indecipherable language crafted in 2020 for internal use.</p>
+                <p>A 2020-born, indecipherable script that guards our secrets in plain sight.</p>
+                <div class="feature-icon">🖋️</div>
             </div>
             <div class="feature-card">
-                <h3>Eco-Friendly Tech</h3>
-                <p>Operates on low-cost, sustainable hardware for a greener blockchain future.</p>
+                <h3>Green Nodes</h3>
+                <p>Powering the network with sustainable hardware for a cleaner tomorrow.</p>
+                <div class="feature-icon">🌱</div>
             </div>
         </div>
     </section>
 
     <!-- Tech Specs Section -->
     <section id="tech" class="section">
-        <h2>Technical Specifications</h2>
-        <table class="tech-table">
-            <tr><th>Parameter</th><th>Details</th></tr>
-            <tr><td>Finality</td><td>2 minutes (no confirmations required)</td></tr>
-            <tr><td>Block Time</td><td>2 minutes</td></tr>
-            <tr><td>Transactions Per Second (TPS)</td><td>1000</td></tr>
-            <tr><td>Algorithm</td><td>Script (similar to Bitcoin)</td></tr>
-            <tr><td>Hardware</td><td>Raspberry Pi (low-cost, eco-friendly)</td></tr>
-        </table>
+        <h2>Tech Arsenal</h2>
+        <div class="tech-container">
+            <table class="tech-table">
+                <tr><th>Metric</th><th>Value</th></tr>
+                <tr><td>Finality</td><td>2 minutes (instant)</td></tr>
+                <tr><td>Block Time</td><td>2 minutes</td></tr>
+                <tr><td>Transactions/Sec</td><td>1000</td></tr>
+                <tr><td>Consensus</td><td>Script (Bitcoin-inspired)</td></tr>
+                <tr><td>Hardware</td><td>Raspberry Pi Nodes</td></tr>
+            </table>
+            <div class="tech-demo">
+                <p>Simulate a transaction: <button onclick="simulateTransaction()">Run Demo</button></p>
+                <div id="demo-output" class="demo-output"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Roadmap Section -->
+    <section id="roadmap" class="section">
+        <h2>Roadmap to the Stars</h2>
+        <div class="roadmap-timeline">
+            <div class="roadmap-item">
+                <h3>2025 Q2</h3>
+                <p>Launch of Walar Network Beta with 500 TPS.</p>
+            </div>
+            <div class="roadmap-item">
+                <h3>2025 Q4</h3>
+                <p>Full 1000 TPS capacity and W Language integration.</p>
+            </div>
+            <div class="roadmap-item">
+                <h3>2026 Q1</h3>
+                <p>Global node expansion and $WALAR staking.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="section">
+        <h2>Meet the Crew</h2>
+        <div class="team-grid">
+            <div class="team-member">
+                <h3>Alexandru V.</h3>
+                <p>Chief Cryptographer</p>
+                <p>Mastermind behind Walar Encrypt.</p>
+            </div>
+            <div class="team-member">
+                <h3>Maria S.</h3>
+                <p>Blockchain Architect</p>
+                <p>Designed the 1000 TPS engine.</p>
+            </div>
+            <div class="team-member">
+                <h3>Ion T.</h3>
+                <p>Eco-Tech Lead</p>
+                <p>Pioneered Raspberry Pi nodes.</p>
+            </div>
+        </div>
     </section>
 
     <!-- Community Section -->
     <section id="community" class="section">
-        <h2>Join the Walar Community</h2>
-        <p>Be part of a movement that values privacy, security, and sustainability. Follow us on <a href="https://x.com" target="_blank">X</a> for updates, join our forums, or contribute to the network’s growth. Together, we’re building a decentralized future!</p>
-        <p><em>“Innovation begins where privacy meets technology.”</em> – Walar Vision, 2025</p>
+        <h2>Join the Walar Galaxy</h2>
+        <p>Become a pioneer in our decentralized universe. Follow us on <a href="https://x.com" target="_blank">X</a>, join our Discord, or mine $WALAR to fuel the network. Together, we conquer the future!</p>
+        <div class="community-stats">
+            <div class="stat-card"><span>500+</span> Nodes</div>
+            <div class="stat-card"><span>10k+</span> Users</div>
+            <div class="stat-card"><span>24/7</span> Uptime</div>
+        </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <p>© 2025 Walar Organization. All rights reserved.</p>
+        <p>© 2025 Walar Organization. All rights reserved. | <a href="#privacy">Privacy</a> | <a href="#terms">Terms</a></p>
     </footer>
 
     <script src="script.js"></script>
